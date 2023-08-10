@@ -94,6 +94,11 @@ int main() {
                 printf("Score this game: %d\n", score);
                 break;
             }
+
+            if (score <= 0) {
+                printf("You've run out of score. The winning number was %d.\n", winningNumber);
+                break;
+            }
         }
         play=1;
     }while(play == 1);
